@@ -7,6 +7,28 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
 </head>
 <body>
+	<h1>Quotes</h1>
+    <input type="button" value="First Page" id="btnFirstPage" />
+    <input type="button" value="Previous Page" id="btnPrevPage" />
+    <input type="button" value="Next Page" id="btnNextPage" />
+    <input type="button" value="Last Page" id="btnLastPage" />
+    <div id="mainContainer"></div>
 
+    
+    <script type="text/template" id="tmplt-Quotes">
+        <ul>
+        </ul>
+    </script>
+    <div id="quotes">
+    <script type="text/template" id="tmplt-Quote">
+        <div>*******************************************************</div>
+		<div>Quote: <%= quote %> </div>
+		<div>Source: <%= source %> </div>
+        <div>Context: <%= context %> </div>
+        <div>Theme: <%= theme %> </div>
+    </script>
+    
+    <script src="quotes.js" type="text/javascript"></script> 
+    </div>
 </body>
 </html>
