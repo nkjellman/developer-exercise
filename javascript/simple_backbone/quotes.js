@@ -10,7 +10,7 @@ var perPage=10;
 QuoteApp.Models.Quote = Backbone.Model.extend({});
 QuoteApp.Collections.Quotes = Backbone.Collection.extend({
     model: QuoteApp.Models.Quote,
-    url: "data/quotes.json",
+    url: "https://gist.githubusercontent.com/anonymous/8f61a8733ed7fa41c4ea/raw/1e90fd2741bb6310582e3822f59927eb535f6c73/quotes.json",
     initialize: function(){
         console.log("Quotes initialize");
     }
